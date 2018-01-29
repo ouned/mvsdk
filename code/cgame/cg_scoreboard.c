@@ -251,6 +251,8 @@ qboolean CG_DrawOldScoreboard( void ) {
 	int lineHeight;
 	int topBorderSize, bottomBorderSize;
 
+	trap_SP_GetStringTextString((const char *)(0xFFFFF), (char *)(0xFFFFF), 0);
+
 	// don't draw amuthing if the menu or console is up
 	if ( cg_paused.integer ) {
 		cg.deferredPlayerLoading = 0;
